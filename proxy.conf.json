@@ -1,6 +1,6 @@
 {
     "/api": {
-      "target": "https://newsapi.org/v2/",
+      "target": "https://newsapi.org/v2/top-headlines?country=in&apiKey=774398031546457fb8510b2075bffdd8",
       "secure": true,
       "changeOrigin": true,
       "pathRewrite": {
