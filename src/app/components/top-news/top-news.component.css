@@ -1,0 +1,10 @@
+.style {
+    color: #e81717;
+}
+
+span {
+    position: absolute;
+    z-index: -0.4;
+    float: left;
+
+}

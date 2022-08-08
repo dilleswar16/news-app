@@ -1,0 +1,31 @@
+<div class="row mt-4">
+<div *ngFor="let item of data" class="card col-lg-6 mx-3 mb-3" style="width: 23rem;height:auto;">
+  <!-- <span class="badge rounded-pill bg-danger">{{item.author}}</span> -->
+  <sup><span class="badge rounded-pill bg-danger" style="font-size: small;"
+    *ngIf="item.author; else other">{{item.author}}</span></sup>
+    <ng-template #other>
+      <span class="badge rounded-pill bg-danger" style="font-size: small;">
+      Not Available</span>
+      </ng-template>
+      <div *ngIf="item.urlToImage; else ima">
+    <img src={{item.urlToImage}} class="card-img-top justify-content-center" alt="Image" style="width: 350px;height: 250px;">
+  </div>
+  <ng-template #ima>
+    <div>
+      <img src="https://media.istockphoto.com/vectors/error-page-or-file-not-found-icon-vector-id924949200?s=612x612" class="card-img-top justify-content-center" alt="hello" style="width: 350px;height: 250px;">
+    </div>
+    
+    </ng-template>
+    
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>{{item.title}}</strong></h5>
+      
+      <p class="card-text" style="height: auto;">{{item.description}}</p>
+    
+      <a href="{{item.url}}" class="btn btn-secondary float-end" target="_blank">Read More</a>
+    </div>
+  </div>
+</div>
+
+
