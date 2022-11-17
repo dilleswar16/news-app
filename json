@@ -1,0 +1,16 @@
+{
+    "role":"ADMIN",
+    "firstname": "Peter",
+    "lastname": "Parker",
+    "address": {
+      "line": "16B,dru",
+      "city": "penselvenia",
+      "state": "texas",
+      "zipCode": "345678"
+    },
+    "password": "spidey",
+    "dateOfBirth": "2020-11-11T18:30:00.000+00:00",
+    "emailId": "peteparker2389@gmail.com",
+    "mobileNo": "34567890",
+    "department": "superhero"
+  }
